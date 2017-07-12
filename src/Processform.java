@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class Processform
@@ -31,6 +32,10 @@ public class Processform extends HttpServlet {
 		String pass = request.getParameter("password");
 		String message = "Invalid User";
 		String page = "/Output.jsp";
+		
+		HttpSession session = request.getSession();
+		
+		session.setAttribute("username",email);
 		
 		if(email.equals("l@gmail.com"))
 		{

@@ -8,42 +8,7 @@
 </head>
 <body>
 
-${message}
-
-<h2> Creating Lists</h2>
-<ul>
-<li> User1</li>
-<li> User2</li>
-<li> User3</li>
-<li> User4</li>
-<li> User5</li>
-</ul>
-
-<table>
-<tr>
-<td>
-1
-</td>
-
-<td>
-2
-</td>
-
-</tr>
-
-<tr>
-<td>
-3
-</td>
-
-<td>
-4
-</td>
-
-</tr>
-</table>
-
-<a href = "op2.jsp" >Link to last page</a>
+<h2> welcome ${username}</h2>
 
 </body>
 </html>
